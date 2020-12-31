@@ -1,0 +1,57 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_rtmp_live_plugin (0.0.1):
+    - Flutter
+    - libksygpulive_ks3/libksygpulive
+  - GPUImage (0.1.7)
+  - libksygpulive_ks3/base (3.0.4)
+  - libksygpulive_ks3/libksygpulive (3.0.4):
+    - GPUImage
+    - libksygpulive_ks3/streamerbase
+  - libksygpulive_ks3/mediacodec (3.0.4)
+  - libksygpulive_ks3/mediacore_enc_base (3.0.4)
+  - libksygpulive_ks3/mediacore_enc_lite (3.0.4)
+  - libksygpulive_ks3/streamerbase (3.0.4):
+    - libksygpulive_ks3/base
+    - libksygpulive_ks3/mediacodec
+    - libksygpulive_ks3/mediacore_enc_base
+    - libksygpulive_ks3/mediacore_enc_lite
+    - libksygpulive_ks3/yuv
+  - libksygpulive_ks3/yuv (3.0.4)
+  - permission_handler (4.4.0):
+    - Flutter
+  - shared_preferences (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_rtmp_live_plugin (from `.symlinks/plugins/flutter_rtmp_live_plugin/ios`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+  - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+
+SPEC REPOS:
+  trunk:
+    - GPUImage
+    - libksygpulive_ks3
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_rtmp_live_plugin:
+    :path: ".symlinks/plugins/flutter_rtmp_live_plugin/ios"
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
+  shared_preferences:
+    :path: ".symlinks/plugins/shared_preferences/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_rtmp_live_plugin: 03a4a59313eaf907c59ed5080683673b1e54a763
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  libksygpulive_ks3: 6a58d948653d613d4e4c6b03cd538da27e8bbc3d
+  permission_handler: f615215121f43c1640d2b8500d4ad749512828a8
+  shared_preferences: 1feebfa37bb57264736e16865e7ffae7fc99b523
+
+PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
+
+COCOAPODS: 1.8.4

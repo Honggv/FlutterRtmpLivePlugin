@@ -1,0 +1,47 @@
+group 'com.honggv.flutter_rtmp_live_plugin'
+version '1.0'
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+    }
+}
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 18
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //consumerProguardFiles 'consumer-proguard-rules.txt'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            //开启删除无用的资源
+            shrinkResources false
+//            useProguard true
+        }
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    // json序列化
+    implementation 'com.alibaba:fastjson:1.2.55'
+    implementation files('libs/ksylive.jar')
+}
